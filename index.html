@@ -1,129 +1,1209 @@
+Certainly! Here's the continuation and completion of the `index.html` and `styles.css` files to include all 112 CSS properties along with their corresponding values. This example will demonstrate each property effectively.
+
+### `index.html`
+```html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Comprehensive CSS Guide</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#basic-styling">Basic Styling</a></li>
-          <li><a href="#layouts">Layouts</a></li>
-          <li><a href="#positioning">Positioning</a></li>
-          <li><a href="#backgrounds">Backgrounds</a></li>
-          <li><a href="#borders">Borders</a></li>
-          <li><a href="#box-model">Box Model</a></li>
-          <li><a href="#transitions">Transitions</a></li>
-          <li><a href="#typography">Typography</a></li>
-          <li><a href="#display">Display</a></li>
-        </ul>
-      </nav>
+        <h1>CSS Properties Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#properties">Properties</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="hero">
-      <h1>Welcome to the Comprehensive CSS Guide</h1>
-      <p>Explore various CSS properties and their values</p>
-    </section>
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Welcome to the CSS Properties Showcase! This project demonstrates the usage of various CSS properties and their corresponding values.</p>
+        </section>
 
-    <section id="basic-styling">
-      <h2>Basic Styling</h2>
-      <div class="basic-styling-examples">
-        <p class="text-color">This text has a different color.</p>
-        <p class="text-alignment">This text is centered.</p>
-        <p class="text-font">This text uses a different font family.</p>
-      </div>
-    </section>
+        <section id="properties">
+            <h2>CSS Properties</h2>
+            <div class="property-list">
+                <div class="property" style="accent-color: red;">
+                    <h3>Accent Color</h3>
+                    <p>Values: <code>&lt;color&gt;</code></p>
+                </div>
+                <div class="property" style="appearance: none;">
+                    <h3>Appearance</h3>
+                    <p>Values: <code>none | auto</code></p>
+                </div>
+                <div class="property" style="aspect-ratio: 16 / 9;">
+                    <h3>Aspect Ratio</h3>
+                    <p>Values: <code>&lt;ratio&gt;</code></p>
+                </div>
+                <div class="property" style="align-content: center;">
+                    <h3>Align Content</h3>
+                    <p>Values: <code>flex-start | flex-end | center | space-between | space-around | space-evenly | stretch</code></p>
+                </div>
+                <div class="property" style="align-items: center;">
+                    <h3>Align Items</h3>
+                    <p>Values: <code>flex-start | flex-end | center | baseline | stretch</code></p>
+                </div>
+                <div class="property" style="align-self: flex-start;">
+                    <h3>Align Self</h3>
+                    <p>Values: <code>auto | flex-start | flex-end | center | baseline | stretch</code></p>
+                </div>
+                <div class="property" style="all: unset;">
+                    <h3>All</h3>
+                    <p>Values: <code>initial | inherit | unset</code></p>
+                </div>
+                <div class="property" style="animation: example 2s infinite;">
+                    <h3>Animation</h3>
+                    <p>Values: <code>&lt;animation-name&gt; &lt;duration&gt; &lt;timing-function&gt; &lt;delay&gt; &lt;iteration-count&gt; &lt;direction&gt; &lt;fill-mode&gt; &lt;play-state&gt;</code></p>
+                </div>
+                <div class="property" style="animation-delay: 1s;">
+                    <h3>Animation Delay</h3>
+                    <p>Values: <code>&lt;time&gt;</code></p>
+                </div>
+                <div class="property" style="animation-direction: alternate;">
+                    <h3>Animation Direction</h3>
+                    <p>Values: <code>normal | reverse | alternate | alternate-reverse</code></p>
+                </div>
+                <div class="property" style="animation-duration: 2s;">
+                    <h3>Animation Duration</h3>
+                    <p>Values: <code>&lt;time&gt;</code></p>
+                </div>
+                <div class="property" style="animation-fill-mode: forwards;">
+                    <h3>Animation Fill Mode</h3>
+                    <p>Values: <code>none | forwards | backwards | both</code></p>
+                </div>
+                <div class="property" style="animation-iteration-count: infinite;">
+                    <h3>Animation Iteration Count</h3>
+                    <p>Values: <code>&lt;number&gt; | infinite</code></p>
+                </div>
+                <div class="property" style="animation-name: example;">
+                    <h3>Animation Name</h3>
+                    <p>Values: <code>&lt;identifier&gt;</code></p>
+                </div>
+                <div class="property" style="animation-play-state: running;">
+                    <h3>Animation Play State</h3>
+                    <p>Values: <code>running | paused</code></p>
+                </div>
+                <div class="property" style="animation-timing-function: ease-in;">
+                    <h3>Animation Timing Function</h3>
+                    <p>Values: <code>linear | ease | ease-in | ease-out | ease-in-out | cubic-bezier(...)</code></p>
+                </div>
+                <div class="property" style="backdrop-filter: blur(5px);">
+                    <h3>Backdrop Filter</h3>
+                    <p>Values: <code>none | &lt;filter-function&gt;</code></p>
+                </div>
+                <div class="property" style="background: linear-gradient(to right, #ff7e5f, #feb47b);">
+                    <h3>Background</h3>
+                    <p>Values: <code>&lt;color&gt; | &lt;image&gt; | &lt;position&gt; | &lt;size&gt; | &lt;repeat&gt; | &lt;attachment&gt; | &lt;clip&gt; | &lt;origin&gt; | &lt;blend-mode&gt;</code></p>
+                </div>
+                <div class="property" style="background-attachment: fixed;">
+                    <h3>Background Attachment</h3>
+                    <p>Values: <code>scroll | fixed | local</code></p>
+                </div>
+                <div class="property" style="background-blend-mode: multiply;">
+                    <h3>Background Blend Mode</h3>
+                    <p>Values: <code>normal | multiply | screen | overlay | darken | lighten | color-dodge | color-burn | hard-light | soft-light | difference | exclusion | hue | saturation | color | luminosity</code></p>
+                </div>
+                <div class="property" style="background-clip: border-box;">
+                    <h3>Background Clip</h3>
+                    <p>Values: <code>border-box | padding-box | content-box</code></p>
+                </div>
+                <div class="property" style="background-color: #3498db;">
+                    <h3>Background Color</h3>
+                    <p>Values: <code>&lt;color&gt;</code></p>
+                </div>
+                <div class="property" style="background-image: url('https://via.placeholder.com/150');">
+                    <h3>Background Image</h3>
+                    <p>Values: <code>url(...)</code></p>
+                </div>
+                <div class="property" style="background-origin: padding-box;">
+                    <h3>Background Origin</h3>
+                    <p>Values: <code>border-box | padding-box | content-box</code></p>
+                </div>
+                <div class="property" style="background-position: center;">
+                    <h3>Background Position</h3>
+                    <p>Values: <code>&lt;position&gt; | &lt;length&gt; | &lt;percentage&gt;</code></p>
+                </div>
+                <div class="property" style="background-repeat: no-repeat;">
+                    <h3>Background Repeat</h3>
+                    <p>Values: <code>repeat | repeat-x | repeat-y | no-repeat</code></p>
+                </div>
+                <div class="property" style="background-size: cover;">
+                    <h3>Background Size</h3>
+                    <p>Values: <code>auto | &lt;length&gt; | cover | contain</code></p>
+                </div>
+                <div class="property" style="border: 2px solid #2c3e50;">
+                    <h3>Border</h3>
+                    <p>Values: <code>&lt;border-width&gt; &lt;border-style&gt; &lt;border-color&gt;</code></p>
+                </div>
+                <div class="property" style="border-bottom: 2px solid #e74c3c;">
+                    <h3>Border Bottom</h3>
+                    <p>Values: <code>&lt;border-width&gt; &lt;border-style&gt; &lt;border-color&gt;</code></p>
+                </div>
+                <div class="property" style="border-bottom-color: #e74c3c;">
+                    <h3>Border Bottom Color</h3>
+                    <p>Values: <code>&lt;color&gt;</code></p>
+                </div>
+                <div class="property" style="border-bottom-left-radius: 10px;">
+                    <h3>Border
 
-    <section id="layouts">
-      <h2>Layouts</h2>
-      <div class="flexbox-container">
-        <div class="flexbox-item">Flexbox Item 1</div>
-        <div class="flexbox-item">Flexbox Item 2</div>
-        <div class="flexbox-item">Flexbox Item 3</div>
-      </div>
-      <div class="grid-container">
-        <div class="grid-item">Grid Item 1</div>
-        <div class="grid-item">Grid Item 2</div>
-        <div class="grid-item">Grid Item 3</div>
-        <div class="grid-item">Grid Item 4</div>
-      </div>
-    </section>
+ Bottom Left Radius</h3>
+                    <p>Values: <code>&lt;length&gt; | &lt;percentage&gt;</code></p>
+                </div>
+                <div class="property" style="border-bottom-right-radius: 10px;">
+                    <h3>Border Bottom Right Radius</h3>
+                    <p>Values: <code>&lt;length&gt; | &lt;percentage&gt;</code></p>
+                </div>
+                <div class="property" style="border-bottom-style: dashed;">
+                    <h3>Border Bottom Style</h3>
+                    <p>Values: <code>&lt;border-style&gt;</code></p>
+                </div>
+                <div class="property" style="border-bottom-width: 5px;">
+                    <h3>Border Bottom Width</h3>
+                    <p>Values: <code>&lt;length&gt;</code></p>
+                </div>
+                <div class="property" style="border-collapse: collapse;">
+                    <h3>Border Collapse</h3>
+                    <p>Values: <code>collapse | separate</code></p>
+                </div>
+                <div class="property" style="border-color: #e74c3c;">
+                    <h3>Border Color</h3>
+                    <p>Values: <code>&lt;color&gt;</code></p>
+                </div>
+                <div class="property" style="border-image: url('https://via.placeholder.com/20') 30 stretch;">
+                    <h3>Border Image</h3>
+                    <p>Values: <code>&lt;source&gt; &lt;slice&gt; | &lt;width&gt; | &lt;outset&gt; | &lt;repeat&gt;</code></p>
+                </div>
+                <div class="property" style="border-image-outset: 10px;">
+                    <h3>Border Image Outset</h3>
+                    <p>Values: <code>&lt;length&gt; | &lt;number&gt;</code></p>
+                </div>
+                <div class="property" style="border-image-repeat: round;">
+                    <h3>Border Image Repeat</h3>
+                    <p>Values: <code>stretch | repeat | round | space</code></p>
+                </div>
+                <div class="property" style="border-image-slice: 50%;">
+                    <h3>Border Image Slice</h3>
+                    <p>Values: <code>&lt;number&gt; | &lt;percentage&gt; | fill</code></p>
+                </div>
+                <div class="property" style="border-image-source: url('https://via.placeholder.com/20');">
+                    <h3>Border Image Source</h3>
+                    <p>Values: <code>none | &lt;image&gt;</code></p>
+                </div>
+                <div class="property" style="border-image-width: 5px;">
+                    <h3>Border Image Width</h3>
+                    <p>Values: <code>&lt;length&gt; | &lt;percentage&gt; | &lt;number&gt; | auto</code></p>
+                </div>
+                <div class="property" style="border-left: 5px dotted #9b59b6;">
+                    <h3>Border Left</h3>
+                    <p>Values: <code>&lt;border-width&gt; &lt;border-style&gt; &lt;border-color&gt;</code></p>
+                </div>
+                <div class="property" style="border-left-color: #9b59b6;">
+                    <h3>Border Left Color</h3>
+                    <p>Values: <code>&lt;color&gt;</code></p>
+                </div>
+                <div class="property" style="border-left-style: dotted;">
+                    <h3>Border Left Style</h3>
+                    <p>Values: <code>&lt;border-style&gt;</code></p>
+                </div>
+                <div class="property" style="border-left-width: 10px;">
+                    <h3>Border Left Width</h3>
+                    <p>Values: <code>&lt;length&gt;</code></p>
+                </div>
+                <div class="property" style="border-radius: 20px;">
+                    <h3>Border Radius</h3>
+                    <p>Values: <code>&lt;length&gt; | &lt;percentage&gt;</code></p>
+                </div>
+                <div class="property" style="border-right: 5px double #e67e22;">
+                    <h3>Border Right</h3>
+                    <p>Values: <code>&lt;border-width&gt; &lt;border-style&gt; &lt;border-color&gt;</code></p>
+                </div>
+                <div class="property" style="border-right-color: #e67e22;">
+                    <h3>Border Right Color</h3>
+                    <p>Values: <code>&lt;color&gt;</code></p>
+                </div>
+                <div class="property" style="border-right-style: double;">
+                    <h3>Border Right Style</h3>
+                    <p>Values: <code>&lt;border-style&gt;</code></p>
+                </div>
+                <div class="property" style="border-right-width: 15px;">
+                    <h3>Border Right Width</h3>
+                    <p>Values: <code>&lt;length&gt;</code></p>
+                </div>
+                <div class="property" style="border-spacing: 10px;">
+                    <h3>Border Spacing</h3>
+                    <p>Values: <code>&lt;length&gt; &lt;length&gt;</code></p>
+                </div>
+                <div class="property" style="border-style: solid;">
+                    <h3>Border Style</h3>
+                    <p>Values: <code>&lt;border-style&gt;</code></p>
+                </div>
+                <div class="property" style="border-top: 3px groove #1abc9c;">
+                    <h3>Border Top</h3>
+                    <p>Values: <code>&lt;border-width&gt; &lt;border-style&gt; &lt;border-color&gt;</code></p>
+                </div>
+                <div class="property" style="border-top-color: #1abc9c;">
+                    <h3>Border Top Color</h3>
+                    <p>Values: <code>&lt;color&gt;</code></p>
+                </div>
+                <div class="property" style="border-top-left-radius: 15px;">
+                    <h3>Border Top Left Radius</h3>
+                    <p>Values: <code>&lt;length&gt; | &lt;percentage&gt;</code></p>
+                </div>
+                <div class="property" style="border-top-right-radius: 15px;">
+                    <h3>Border Top Right Radius</h3>
+                    <p>Values: <code>&lt;length&gt; | &lt;percentage&gt;</code></p>
+                </div>
+                <div class="property" style="border-top-style: groove;">
+                    <h3>Border Top Style</h3>
+                    <p>Values: <code>&lt;border-style&gt;</code></p>
+                </div>
+                <div class="property" style="border-top-width: 8px;">
+                    <h3>Border Top Width</h3>
+                    <p>Values: <code>&lt;length&gt;</code></p>
+                </div>
+                <div class="property" style="border-width: 10px;">
+                    <h3>Border Width</h3>
+                    <p>Values: <code>&lt;length&gt;</code></p>
+                </div>
+                <div class="property" style="bottom: 20px;">
+                    <h3>Bottom</h3>
+                    <p>Values: <code>&lt;length&gt; | &lt;percentage&gt;</code></p>
+                </div>
+                <div class="property" style="box-shadow: 10px 10px 5px #888888;">
+                    <h3>Box Shadow</h3>
+                    <p>Values: <code>&lt;offset-x&gt; &lt;offset-y&gt; &lt;blur-radius&gt; &lt;spread-radius&gt; &lt;color&gt;</code></p>
+                </div>
+                <div class="property" style="box-sizing: border-box;">
+                    <h3>Box Sizing</h3>
+                    <p>Values: <code>content-box | border-box</code></p>
+                </div>
+                <div class="property" style="break-after: column;">
+                    <h3>Break After</h3>
+                    <p>Values: <code>auto | avoid | always | all | avoid-page | page | left | right | recto | verso | avoid-column | column | avoid-region | region</code></p>
+                </div>
+                <div class="property" style="break-before: avoid;">
+                    <h3>Break Before</h3>
+                    <p>Values: <code>auto | avoid | always | all | avoid-page | page | left | right | recto | verso | avoid-column | column | avoid-region | region</code></p>
+                </div>
+                <div class="property" style="break-inside: avoid;">
+                    <h3>Break Inside</h3>
+                    <p>Values: <code>auto | avoid | avoid-page | avoid
 
-    <section id="positioning">
-      <h2>Positioning</h2>
-      <div class="positioning-container">
-        <div class="relative-box">Relative Box</div>
-        <div class="absolute-box">Absolute Box</div>
-        <div class="fixed-box">Fixed Box</div>
-        <div class="sticky-box">Sticky Box</div>
-      </div>
-    </section>
+-column | avoid-region</code></p>
+                </div>
+                <div class="property" style="caption-side: bottom;">
+                    <h3>Caption Side</h3>
+                    <p>Values: <code>top | bottom | block-start | block-end | inline-start | inline-end</code></p>
+                </div>
+                <div class="property" style="caret-color: red;">
+                    <h3>Caret Color</h3>
+                    <p>Values: <code>&lt;color&gt; | auto</code></p>
+                </div>
+                <div class="property" style="clear: both;">
+                    <h3>Clear</h3>
+                    <p>Values: <code>none | left | right | both | inline-start | inline-end</code></p>
+                </div>
+                <div class="property" style="clip: rect(10px, 20px, 30px, 40px);">
+                    <h3>Clip</h3>
+                    <p>Values: <code>&lt;shape&gt; | auto</code></p>
+                </div>
+                <div class="property" style="clip-path: circle(50%);">
+                    <h3>Clip Path</h3>
+                    <p>Values: <code>&lt;clip-source&gt; | &lt;geometry-box&gt;</code></p>
+                </div>
+                <div class="property" style="color: #3498db;">
+                    <h3>Color</h3>
+                    <p>Values: <code>&lt;color&gt;</code></p>
+                </div>
+                <div class="property" style="color-scheme: light dark;">
+                    <h3>Color Scheme</h3>
+                    <p>Values: <code>normal | light | dark | only</code></p>
+                </div>
+                <div class="property" style="column-count: 3;">
+                    <h3>Column Count</h3>
+                    <p>Values: <code>auto | &lt;integer&gt;</code></p>
+                </div>
+                <div class="property" style="column-fill: balance;">
+                    <h3>Column Fill</h3>
+                    <p>Values: <code>auto | balance | balance-all</code></p>
+                </div>
+                <div class="property" style="column-gap: 15px;">
+                    <h3>Column Gap</h3>
+                    <p>Values: <code>&lt;length&gt; | normal</code></p>
+                </div>
+                <div class="property" style="column-rule: 5px dotted #8e44ad;">
+                    <h3>Column Rule</h3>
+                    <p>Values: <code>&lt;border-width&gt; &lt;border-style&gt; &lt;color&gt;</code></p>
+                </div>
+                <div class="property" style="column-rule-color: #8e44ad;">
+                    <h3>Column Rule Color</h3>
+                    <p>Values: <code>&lt;color&gt;</code></p>
+                </div>
+                <div class="property" style="column-rule-style: dotted;">
+                    <h3>Column Rule Style</h3>
+                    <p>Values: <code>&lt;border-style&gt;</code></p>
+                </div>
+                <div class="property" style="column-rule-width: 10px;">
+                    <h3>Column Rule Width</h3>
+                    <p>Values: <code>&lt;length&gt;</code></p>
+                </div>
+                <div class="property" style="column-span: all;">
+                    <h3>Column Span</h3>
+                    <p>Values: <code>none | all</code></p>
+                </div>
+                <div class="property" style="column-width: 200px;">
+                    <h3>Column Width</h3>
+                    <p>Values: <code>auto | &lt;length&gt;</code></p>
+                </div>
+                <div class="property" style="contain: content;">
+                    <h3>Contain</h3>
+                    <p>Values: <code>none | strict | content | size | layout | style | paint</code></p>
+                </div>
+                <div class="property" style="content: 'Hello';">
+                    <h3>Content</h3>
+                    <p>Values: <code>&lt;content-replacement&gt; | &lt;content-list&gt; | normal | none</code></p>
+                </div>
+                <div class="property" style="counter-increment: section;">
+                    <h3>Counter Increment</h3>
+                    <p>Values: <code>&lt;identifier&gt; &lt;integer&gt;</code></p>
+                </div>
+                <div class="property" style="counter-reset: section;">
+                    <h3>Counter Reset</h3>
+                    <p>Values: <code>&lt;identifier&gt; &lt;integer&gt;</code></p>
+                </div>
+                <div class="property" style="cursor: pointer;">
+                    <h3>Cursor</h3>
+                    <p>Values: <code>&lt;cursor&gt;</code></p>
+                </div>
+                <div class="property" style="direction: rtl;">
+                    <h3>Direction</h3>
+                    <p>Values: <code>ltr | rtl</code></p>
+                </div>
+                <div class="property" style="display: grid;">
+                    <h3>Display</h3>
+                    <p>Values: <code>&lt;display-outside&gt; &lt;display-inside&gt; | &lt;display-listitem&gt; | &lt;display-internal&gt; | &lt;display-box&gt; | &lt;display-legacy&gt;</code></p>
+                </div>
+                <div class="property" style="empty-cells: show;">
+                    <h3>Empty Cells</h3>
+                    <p>Values: <code>show | hide</code></p>
+                </div>
+                <div class="property" style="filter: blur(5px);">
+                    <h3>Filter</h3>
+                    <p>Values: <code>&lt;filter-function&gt; | none</code></p>
+                </div>
+                <div class="property" style="flex: 1 1 auto;">
+                    <h3>Flex</h3>
+                    <p>Values: <code>&lt;flex-grow&gt; &lt;flex-shrink&gt; &lt;flex-basis&gt;</code></p>
+                </div>
+                <div class="property" style="flex-basis: 50%;">
+                    <h3>Flex Basis</h3>
+                    <p>Values: <code>&lt;length&gt; | &lt;percentage&gt; | auto | fill | max-content | min-content | fit-content | content</code></p>
+                </div>
+                <div class="property" style="flex-direction: column;">
+                    <h3>Flex Direction</h3>
+                    <p>Values: <code>row | row-reverse | column | column-reverse</code></p>
+                </div>
+                <div class="property" style="flex-flow: column-reverse nowrap;">
+                    <h3>Flex Flow</h3>
+                    <p>Values: <code>&lt;flex-direction&gt; &lt;flex-wrap&gt;</code></p>
+                </div>
+                <div class="property" style="flex-grow: 2;">
+                    <h3>Flex Grow</h3>
+                    <p>Values: <code>&lt;number&gt;</code></p>
+                </div>
+                <div class="property" style="flex-shrink: 0;">
+                    <h3>Flex Shrink</h3>
+                    <p>Values: <code>&lt;number&gt;</code></p>
+                </div>
+                <div class="property" style="flex-wrap: wrap;">
+                    <h3>Flex Wrap</h3>
+                    <p>Values: <code>nowrap | wrap | wrap-reverse</code></p>
+                </div>
+                <div class="property" style="float: left;">
+                    <h3>Float</h3>
+                    <p>Values: <code>left | right | none | inline-start | inline-end</code></p>
+                </div>
+                <div class="property" style="font: italic small-caps bold 16px/2 cursive;">
+                    <h3>Font</h3>
+                    <p>Values: <code>&lt;font-style&gt; &lt;font-variant&gt; &lt;font-weight&gt; &lt;font-size&gt;/&lt;line-height&gt; &lt;font-family&gt;</code></p>
+                </div>
+                <div class="property" style="font-family: 'Courier New', Courier, monospace;">
+                    <h3>Font Family</h3>
+                    <p>Values: <code>&lt;family-name&gt; | &lt;generic-name&gt;</code></p>
+                </div>
+                <div class="property" style="font-feature-settings: 'liga' on;">
+                    <h3>Font Feature Settings</h3>
+                    <p>Values: <code>&lt;feature-tag-value&gt;</code></p>
+                </div>
+                <div class="property" style="font-kerning: normal;">
+                    <h3>Font Kerning</h
 
-    <section id="backgrounds">
-      <h2>Backgrounds</h2>
-      <div class="backgrounds-container">
-        <div class="background-image">Background Image</div>
-        <div class="background-gradient">Background Gradient</div>
-        <div class="radial-gradient-component">Radial Gradient Example</div>
-      </div>
-    </section>
+3>
+                    <p>Values: <code>auto | normal | none</code></p>
+                </div>
+                <div class="property" style="font-language-override: 'SRB';">
+                    <h3>Font Language Override</h3>
+                    <p>Values: <code>&lt;string&gt;</code></p>
+                </div>
+                <div class="property" style="font-optical-sizing: auto;">
+                    <h3>Font Optical Sizing</h3>
+                    <p>Values: <code>auto | none</code></p>
+                </div>
+                <div class="property" style="font-size: 16px;">
+                    <h3>Font Size</h3>
+                    <p>Values: <code>&lt;absolute-size&gt; | &lt;relative-size&gt; | &lt;length&gt; | &lt;percentage&gt;</code></p>
+                </div>
+                <div class="property" style="font-size-adjust: 0.58;">
+                    <h3>Font Size Adjust</h3>
+                    <p>Values: <code>&lt;number&gt; | none</code></p>
+                </div>
+                <div class="property" style="font-stretch: condensed;">
+                    <h3>Font Stretch</h3>
+                    <p>Values: <code>&lt;font-stretch-absolute&gt; | &lt;font-stretch-relative&gt;</code></p>
+                </div>
+                <div class="property" style="font-style: italic;">
+                    <h3>Font Style</h3>
+                    <p>Values: <code>normal | italic | oblique &lt;angle&gt;</code></p>
+                </div>
+                <div class="property" style="font-synthesis: weight;">
+                    <h3>Font Synthesis</h3>
+                    <p>Values: <code>none | weight | style | small-caps</code></p>
+                </div>
+                <div class="property" style="font-variant: small-caps;">
+                    <h3>Font Variant</h3>
+                    <p>Values: <code>&lt;font-variant-caps&gt;</code></p>
+                </div>
+                <div class="property" style="font-variant-alternates: historical-forms;">
+                    <h3>Font Variant Alternates</h3>
+                    <p>Values: <code>&lt;feature-value-name&gt; | normal</code></p>
+                </div>
+                <div class="property" style="font-variant-caps: all-small-caps;">
+                    <h3>Font Variant Caps</h3>
+                    <p>Values: <code>&lt;font-variant-caps&gt;</code></p>
+                </div>
+                <div class="property" style="font-variant-east-asian: ruby;">
+                    <h3>Font Variant East Asian</h3>
+                    <p>Values: <code>&lt;font-variant-east-asian&gt;</code></p>
+                </div>
+                <div class="property" style="font-variant-ligatures: no-contextual;">
+                    <h3>Font Variant Ligatures</h3>
+                    <p>Values: <code>&lt;font-variant-ligatures&gt;</code></p>
+                </div>
+                <div class="property" style="font-variant-numeric: ordinal;">
+                    <h3>Font Variant Numeric</h3>
+                    <p>Values: <code>&lt;font-variant-numeric&gt;</code></p>
+                </div>
+                <div class="property" style="font-variant-position: sub;">
+                    <h3>Font Variant Position</h3>
+                    <p>Values: <code>&lt;font-variant-position&gt;</code></p>
+                </div>
+                <div class="property" style="font-variation-settings: 'wdth' 150;">
+                    <h3>Font Variation Settings</h3>
+                    <p>Values: <code>&lt;feature-tag-value&gt;</code></p>
+                </div>
+                <div class="property" style="font-weight: bold;">
+                    <h3>Font Weight</h3>
+                    <p>Values: <code>&lt;font-weight-absolute&gt; | &lt;font-weight-relative&gt;</code></p>
+                </div>
+                <div class="property" style="forced-color-adjust: none;">
+                    <h3>Forced Color Adjust</h3>
+                    <p>Values: <code>auto | none</code></p>
+                </div>
+                <div class="property" style="gap: 20px;">
+                    <h3>Gap</h3>
+                    <p>Values: <code>&lt;length&gt; | normal</code></p>
+                </div>
+                <div class="property" style="grid: auto-flow dense / 100px 1fr;">
+                    <h3>Grid</h3>
+                    <p>Values: <code>&lt;grid-template-rows&gt; / &lt;grid-template-columns&gt; | &lt;grid-template-areas&gt; | &lt;grid-auto-flow&gt; &lt;grid-auto-columns&gt; &lt;grid-auto-rows&gt; | none</code></p>
+                </div>
+                <div class="property" style="grid-area: header;">
+                    <h3>Grid Area</h3>
+                    <p>Values: <code>&lt;grid-area-name&gt; | &lt;grid-area-longhand&gt;</code></p>
+                </div>
+                <div class="property" style="grid-auto-columns: minmax(100px, auto);">
+                    <h3>Grid Auto Columns</h3>
+                    <p>Values: <code>&lt;track-size&gt; | auto</code></p>
+                </div>
+                <div class="property" style="grid-auto-flow: row dense;">
+                    <h3>Grid Auto Flow</h3>
+                    <p>Values: <code>row | column | dense</code></p>
+                </div>
+                <div class="property" style="grid-auto-rows: 200px;">
+                    <h3>Grid Auto Rows</h3>
+                    <p>Values: <code>&lt;track-size&gt; | auto</code></p>
+                </div>
+                <div class="property" style="grid-column: span 2;">
+                    <h3>Grid Column</h3>
+                    <p>Values: <code>&lt;grid-line&gt; / &lt;grid-line&gt;</code></p>
+                </div>
+                <div class="property" style="grid-column-end: span 3;">
+                    <h3>Grid Column End</h3>
+                    <p>Values: <code>&lt;grid-line&gt;</code></p>
+                </div>
+                <div class="property" style="grid-column-gap: 10px;">
+                    <h3>Grid Column Gap</h3>
+                    <p>Values: <code>&lt;length&gt; | normal</code></p>
+                </div>
+                <div class="property" style="grid-column-start: span 4;">
+                    <h3>Grid Column Start</h3>
+                    <p>Values: <code>&lt;grid-line&gt;</code></p>
+                </div>
+                <div class="property" style="grid-gap: 15px;">
+                    <h3>Grid Gap</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="grid-row: span 5;">
+                    <h3>Grid Row</h3>
+                    <p>Values: <code>&lt;grid-line&gt; / &lt;grid-line&gt;</code></p>
+                </div>
+                <div class="property" style="grid-row-end: span 2;">
+                    <h3>Grid Row End</h3>
+                    <p>Values: <code>&lt;grid-line&gt;</code></p>
+                </div>
+                <div class="property" style="grid-row-gap: 5px;">
+                    <h3>Grid Row Gap</h3>
+                    <p>Values: <code>&lt;length&gt; | normal</code></p>
+                </div>
+                <div class="property" style="grid-row-start: span 3;">
+                    <h3>Grid Row Start</h3>
+                    <p>Values: <code>&lt;grid-line&gt;</code></p>
+                </div>
+                <div class="property" style="grid-template: 'header header' auto 'sidebar content' 1fr / 1fr 2fr;">
+                    <h3>Grid Template</h3>
+                    <p>Values: <code>&lt;grid-template-rows&gt; / &lt;grid-template-columns&gt; | &lt;grid-template-areas&gt; | none</code></p>
+                </div>
+                <div class="property" style="grid-template-areas: 'header header header' 'main main main' 'footer footer footer';">
+                    <h3>Grid Template Areas</h3>
+                    <p>Values: <code>&lt;grid-area-name&gt;</code></p>
+                </div>
+                <div class="property" style="grid-template-columns: 200px 1fr 100px;">
+                    <h3>Grid Template Columns</h3>
+                    <p>Values: <code>&lt;track-list&gt;</code
 
-    <section id="borders">
-      <h2>Borders</h2>
-      <div class="borders-container">
-        <div class="border-solid">Solid Border</div>
-        <div class="border-dashed">Dashed Border</div>
-        <div class="border-dotted">Dotted Border</div>
-        <div class="border-radius">Rounded Border</div>
-      </div>
-    </section>
+></p>
+                </div>
+                <div class="property" style="grid-template-rows: 100px 1fr auto;">
+                    <h3>Grid Template Rows</h3>
+                    <p>Values: <code>&lt;track-list&gt;</code></p>
+                </div>
+                <div class="property" style="hanging-punctuation: first;">
+                    <h3>Hanging Punctuation</h3>
+                    <p>Values: <code>none | first | force-end | allow-end | last</code></p>
+                </div>
+                <div class="property" style="height: 200px;">
+                    <h3>Height</h3>
+                    <p>Values: <code>&lt;length&gt; | &lt;percentage&gt; | auto</code></p>
+                </div>
+                <div class="property" style="hyphenate-character: \u2010;">
+                    <h3>Hyphenate Character</h3>
+                    <p>Values: <code>&lt;string&gt;</code></p>
+                </div>
+                <div class="property" style="hyphenate-limit-chars: auto;">
+                    <h3>Hyphenate Limit Chars</h3>
+                    <p>Values: <code>auto | &lt;integer&gt;</code></p>
+                </div>
+                <div class="property" style="hyphenate-limit-last: auto;">
+                    <h3>Hyphenate Limit Last</h3>
+                    <p>Values: <code>auto | none</code></p>
+                </div>
+                <div class="property" style="hyphenate-limit-lines: 2;">
+                    <h3>Hyphenate Limit Lines</h3>
+                    <p>Values: <code>&lt;integer&gt; | none</code></p>
+                </div>
+                <div class="property" style="hyphenate-limit-zone: 10%;">
+                    <h3>Hyphenate Limit Zone</h3>
+                    <p>Values: <code>&lt;length&gt; | &lt;percentage&gt;</code></p>
+                </div>
+                <div class="property" style="hyphens: auto;">
+                    <h3>Hyphens</h3>
+                    <p>Values: <code>none | manual | auto</code></p>
+                </div>
+                <div class="property" style="image-orientation: from-image;">
+                    <h3>Image Orientation</h3>
+                    <p>Values: <code>from-image | &lt;angle&gt; | flip</code></p>
+                </div>
+                <div class="property" style="image-rendering: crisp-edges;">
+                    <h3>Image Rendering</h3>
+                    <p>Values: <code>auto | crisp-edges | pixelated</code></p>
+                </div>
+                <div class="property" style="image-resolution: 300dpi;">
+                    <h3>Image Resolution</h3>
+                    <p>Values: <code>&lt;resolution&gt;</code></p>
+                </div>
+                <div class="property" style="initial-letter: 2;">
+                    <h3>Initial Letter</h3>
+                    <p>Values: <code>&lt;number&gt; &lt;number&gt;</code></p>
+                </div>
+                <div class="property" style="initial-letter-align: alphabetic;">
+                    <h3>Initial Letter Align</h3>
+                    <p>Values: <code>alphabetic | ideographic</code></p>
+                </div>
+                <div class="property" style="inline-size: 150px;">
+                    <h3>Inline Size</h3>
+                    <p>Values: <code>&lt;length&gt; | &lt;percentage&gt; | auto</code></p>
+                </div>
+                <div class="property" style="inset: 10px 20px 30px 40px;">
+                    <h3>Inset</h3>
+                    <p>Values: <code>&lt;length-percentage&gt; | auto</code></p>
+                </div>
+                <div class="property" style="inset-block: 10px 20px;">
+                    <h3>Inset Block</h3>
+                    <p>Values: <code>&lt;length-percentage&gt; | auto</code></p>
+                </div>
+                <div class="property" style="inset-block-end: 10px;">
+                    <h3>Inset Block End</h3>
+                    <p>Values: <code>&lt;length-percentage&gt; | auto</code></p>
+                </div>
+                <div class="property" style="inset-block-start: 20px;">
+                    <h3>Inset Block Start</h3>
+                    <p>Values: <code>&lt;length-percentage&gt; | auto</code></p>
+                </div>
+                <div class="property" style="inset-inline: 15px 25px;">
+                    <h3>Inset Inline</h3>
+                    <p>Values: <code>&lt;length-percentage&gt; | auto</code></p>
+                </div>
+                <div class="property" style="inset-inline-end: 15px;">
+                    <h3>Inset Inline End</h3>
+                    <p>Values: <code>&lt;length-percentage&gt; | auto</code></p>
+                </div>
+                <div class="property" style="inset-inline-start: 25px;">
+                    <h3>Inset Inline Start</h3>
+                    <p>Values: <code>&lt;length-percentage&gt; | auto</code></p>
+                </div>
+                <div class="property" style="isolation: isolate;">
+                    <h3>Isolation</h3>
+                    <p>Values: <code>auto | isolate</code></p>
+                </div>
+                <div class="property" style="justify-content: center;">
+                    <h3>Justify Content</h3>
+                    <p>Values: <code>flex-start | flex-end | center | space-between | space-around | space-evenly</code></p>
+                </div>
+                <div class="property" style="justify-items: center;">
+                    <h3>Justify Items</h3>
+                    <p>Values: <code>start | end | center | stretch</code></p>
+                </div>
+                <div class="property" style="justify-self: center;">
+                    <h3>Justify Self</h3>
+                    <p>Values: <code>start | end | center | stretch</code></p>
+                </div>
+                <div class="property" style="left: 20px;">
+                    <h3>Left</h3>
+                    <p>Values: <code>&lt;length&gt; | &lt;percentage&gt; | auto</code></p>
+                </div>
+                <div class="property" style="letter-spacing: 0.1em;">
+                    <h3>Letter Spacing</h3>
+                    <p>Values: <code>&lt;length&gt; | normal</code></p>
+                </div>
+                <div class="property" style="line-break: loose;">
+                    <h3>Line Break</h3>
+                    <p>Values: <code>auto | loose | normal | strict</code></p>
+                </div>
+                <div class="property" style="line-height: 1.5;">
+                    <h3>Line Height</h3>
+                    <p>Values: <code>&lt;number&gt; | &lt;length&gt; | &lt;percentage&gt; | normal</code></p>
+                </div>
+                <div class="property" style="line-height-step: 20px;">
+                    <h3>Line Height Step</h3>
+                    <p>Values: <code>&lt;length&gt; | none</code></p>
+                </div>
+                <div class="property" style="list-style: circle inside;">
+                    <h3>List Style</h3>
+                    <p>Values: <code>&lt;list-style-type&gt; &lt;list-style-position&gt; &lt;list-style-image&gt;</code></p>
+                </div>
+                <div class="property" style="list-style-image: url('image.png');">
+                    <h3>List Style Image</h3>
+                    <p>Values: <code>&lt;uri&gt; | none</code></p>
+                </div>
+                <div class="property" style="list-style-position: inside;">
+                    <h3>List Style Position</h3>
+                    <p>Values: <code>inside | outside</code></p>
+                </div>
+                <div class="property" style="list-style-type: square;">
+                    <h3>List Style Type</h3>
+                    <p>Values: <code>&lt;list-style-type&gt;</code></p>
+                </div>
+                <div class="property" style="margin: 10px 20px 30px 40px;">
+                    <h3>Margin</h3>
+                    <p>Values: <code>&lt;length-percentage&gt; | auto</code></p>
+                </div>
+                <div class="property" style="margin-block: 15px;">
+                    <h3>Margin Block</h3>
+                    <p>Values: <code
 
-    <section id="box-model">
-      <h2>Box Model</h2>
-      <div class="box-model-container">
-        <div class="box-padding">Box with Padding</div>
-        <div class="box-margin">Box with Margin</div>
-        <div class="box-border">Box with Border</div>
-        <div class="box-content">Box with Content</div>
-      </div>
-    </section>
+>&lt;length-percentage&gt; | auto</code></p>
+                </div>
+                <div class="property" style="margin-block-end: 25px;">
+                    <h3>Margin Block End</h3>
+                    <p>Values: <code>&lt;length-percentage&gt; | auto</code></p>
+                </div>
+                <div class="property" style="margin-block-start: 35px;">
+                    <h3>Margin Block Start</h3>
+                    <p>Values: <code>&lt;length-percentage&gt; | auto</code></p>
+                </div>
+                <div class="property" style="margin-bottom: 20px;">
+                    <h3>Margin Bottom</h3>
+                    <p>Values: <code>&lt;length-percentage&gt; | auto</code></p>
+                </div>
+                <div class="property" style="margin-inline: 10px 20px;">
+                    <h3>Margin Inline</h3>
+                    <p>Values: <code>&lt;length-percentage&gt; | auto</code></p>
+                </div>
+                <div class="property" style="margin-inline-end: 15px;">
+                    <h3>Margin Inline End</h3>
+                    <p>Values: <code>&lt;length-percentage&gt; | auto</code></p>
+                </div>
+                <div class="property" style="margin-inline-start: 25px;">
+                    <h3>Margin Inline Start</h3>
+                    <p>Values: <code>&lt;length-percentage&gt; | auto</code></p>
+                </div>
+                <div class="property" style="margin-left: 10px;">
+                    <h3>Margin Left</h3>
+                    <p>Values: <code>&lt;length-percentage&gt; | auto</code></p>
+                </div>
+                <div class="property" style="margin-right: 20px;">
+                    <h3>Margin Right</h3>
+                    <p>Values: <code>&lt;length-percentage&gt; | auto</code></p>
+                </div>
+                <div class="property" style="margin-top: 30px;">
+                    <h3>Margin Top</h3>
+                    <p>Values: <code>&lt;length-percentage&gt; | auto</code></p>
+                </div>
+                <div class="property" style="mask: url('mask.png');">
+                    <h3>Mask</h3>
+                    <p>Values: <code>&lt;mask-image&gt; &lt;mask-mode&gt; &lt;mask-position&gt; &lt;mask-repeat&gt; &lt;mask-clip&gt; &lt;mask-origin&gt; &lt;mask-size&gt;</code></p>
+                </div>
+                <div class="property" style="mask-border: url('border.png') 10 stretch;">
+                    <h3>Mask Border</h3>
+                    <p>Values: <code>&lt;mask-border-source&gt; &lt;mask-border-slice&gt; &lt;mask-border-width&gt; &lt;mask-border-outset&gt; &lt;mask-border-repeat&gt;</code></p>
+                </div>
+                <div class="property" style="mask-border-mode: luminance;">
+                    <h3>Mask Border Mode</h3>
+                    <p>Values: <code>luminance | alpha</code></p>
+                </div>
+                <div class="property" style="mask-border-outset: 5px;">
+                    <h3>Mask Border Outset</h3>
+                    <p>Values: <code>&lt;length&gt;</code></p>
+                </div>
+                <div class="property" style="mask-border-repeat: stretch;">
+                    <h3>Mask Border Repeat</h3>
+                    <p>Values: <code>stretch | repeat | round | space</code></p>
+                </div>
+                <div class="property" style="mask-border-slice: 10 fill;">
+                    <h3>Mask Border Slice</h3>
+                    <p>Values: <code>&lt;number&gt; | fill</code></p>
+                </div>
+                <div class="property" style="mask-border-source: url('source.png');">
+                    <h3>Mask Border Source</h3>
+                    <p>Values: <code>&lt;uri&gt;</code></p>
+                </div>
+                <div class="property" style="mask-border-width: 10px;">
+                    <h3>Mask Border Width</h3>
+                    <p>Values: <code>&lt;length-percentage&gt; | auto</code></p>
+                </div>
+                <div class="property" style="mask-clip: border-box;">
+                    <h3>Mask Clip</h3>
+                    <p>Values: <code>&lt;geometry-box&gt; | no-clip</code></p>
+                </div>
+                <div class="property" style="mask-composite: add;">
+                    <h3>Mask Composite</h3>
+                    <p>Values: <code>add | subtract | intersect | exclude</code></p>
+                </div>
+                <div class="property" style="mask-image: url('image.png');">
+                    <h3>Mask Image</h3>
+                    <p>Values: <code>&lt;uri&gt; | none</code></p>
+                </div>
+                <div class="property" style="mask-mode: alpha;">
+                    <h3>Mask Mode</h3>
+                    <p>Values: <code>match-source | luminance | alpha</code></p>
+                </div>
+                <div class="property" style="mask-origin: border-box;">
+                    <h3>Mask Origin</h3>
+                    <p>Values: <code>&lt;geometry-box&gt;</code></p>
+                </div>
+                <div class="property" style="mask-position: top left;">
+                    <h3>Mask Position</h3>
+                    <p>Values: <code>&lt;position&gt;</code></p>
+                </div>
+                <div class="property" style="mask-repeat: repeat-x;">
+                    <h3>Mask Repeat</h3>
+                    <p>Values: <code>&lt;repeat-style&gt;</code></p>
+                </div>
+                <div class="property" style="mask-size: cover;">
+                    <h3>Mask Size</h3>
+                    <p>Values: <code>&lt;length-percentage&gt; | auto | cover | contain</code></p>
+                </div>
+                <div class="property" style="mask-type: luminance;">
+                    <h3>Mask Type</h3>
+                    <p>Values: <code>luminance | alpha</code></p>
+                </div>
+                <div class="property" style="max-block-size: 300px;">
+                    <h3>Max Block Size</h3>
+                    <p>Values: <code>&lt;length&gt; | &lt;percentage&gt; | none</code></p>
+                </div>
+                <div class="property" style="max-height: 400px;">
+                    <h3>Max Height</h3>
+                    <p>Values: <code>&lt;length&gt; | &lt;percentage&gt; | none</code></p>
+                </div>
+                <div class="property" style="max-inline-size: 250px;">
+                    <h3>Max Inline Size</h3>
+                    <p>Values: <code>&lt;length&gt; | &lt;percentage&gt; | none</code></p>
+                </div>
+                <div class="property" style="max-lines: 2;">
+                    <h3>Max Lines</h3>
+                    <p>Values: <code>&lt;integer&gt; | none</code></p>
+                </div>
+                <div class="property" style="max-width: 500px;">
+                    <h3>Max Width</h3>
+                    <p>Values: <code>&lt;length&gt; | &lt;percentage&gt; | none</code></p>
+                </div>
+                <div class="property" style="min-block-size: 100px;">
+                    <h3>Min Block Size</h3>
+                    <p>Values: <code>&lt;length&gt; | &lt;percentage&gt; | auto</code></p>
+                </div>
+                <div class="property" style="min-height: 150px;">
+                    <h3>Min Height</h3>
+                    <p>Values: <code>&lt;length&gt; | &lt;percentage&gt; | auto</code></p>
+                </div>
+                <div class="property" style="min-inline-size: 200px;">
+                    <h3>Min Inline Size</h3>
+                    <p>Values: <code>&lt;length&gt; | &lt;percentage&gt; | auto</code></p>
+                </div>
+                <div class="property" style="min-width: 250px;">
+                    <h3>Min Width</h3>
+                    <p>Values: <code>&lt;length&gt; | &lt;percentage&gt; | auto</code></p>
+                </div>
+                <div class="property" style="mix-blend-mode: multiply;">
+                    <h3>Mix Blend Mode</h3>
+                    <p>Values: <code>&
 
-    <section id="transitions">
-      <h2>Transitions and Animations</h2>
-      <div class="transitions-container">
-        <div class="transition-box">Hover me for transition</div>
-        <div class="animation-box">Animation Example</div>
-      </div>
-    </section>
+lt;blend-mode&gt;</code></p>
+                </div>
+                <div class="property" style="object-fit: cover;">
+                    <h3>Object Fit</h3>
+                    <p>Values: <code>fill | contain | cover | none | scale-down</code></p>
+                </div>
+                <div class="property" style="object-position: center;">
+                    <h3>Object Position</h3>
+                    <p>Values: <code>&lt;position&gt;</code></p>
+                </div>
+                <div class="property" style="offset: 10px;">
+                    <h3>Offset</h3>
+                    <p>Values: <code>&lt;offset&gt;</code></p>
+                </div>
+                <div class="property" style="offset-anchor: center;">
+                    <h3>Offset Anchor</h3>
+                    <p>Values: <code>&lt;position&gt;</code></p>
+                </div>
+                <div class="property" style="offset-distance: 20px;">
+                    <h3>Offset Distance</h3>
+                    <p>Values: <code>&lt;length&gt;</code></p>
+                </div>
+                <div class="property" style="offset-path: none;">
+                    <h3>Offset Path</h3>
+                    <p>Values: <code>none | path()</code></p>
+                </div>
+                <div class="property" style="offset-rotate: 0deg;">
+                    <h3>Offset Rotate</h3>
+                    <p>Values: <code>auto | &lt;angle&gt;</code></p>
+                </div>
+                <div class="property" style="offset-position: center;">
+                    <h3>Offset Position</h3>
+                    <p>Values: <code>&lt;position&gt;</code></p>
+                </div>
+                <div class="property" style="opacity: 0.5;">
+                    <h3>Opacity</h3>
+                    <p>Values: <code>&lt;alpha-value&gt;</code></p>
+                </div>
+                <div class="property" style="order: 2;">
+                    <h3>Order</h3>
+                    <p>Values: <code>&lt;integer&gt;</code></p>
+                </div>
+                <div class="property" style="orphans: 2;">
+                    <h3>Orphans</h3>
+                    <p>Values: <code>&lt;integer&gt;</code></p>
+                </div>
+                <div class="property" style="outline: 1px solid black;">
+                    <h3>Outline</h3>
+                    <p>Values: <code>&lt;outline-width&gt; &lt;outline-style&gt; &lt;outline-color&gt;</code></p>
+                </div>
+                <div class="property" style="outline-color: red;">
+                    <h3>Outline Color</h3>
+                    <p>Values: <code>&lt;color&gt;</code></p>
+                </div>
+                <div class="property" style="outline-offset: 5px;">
+                    <h3>Outline Offset</h3>
+                    <p>Values: <code>&lt;length&gt;</code></p>
+                </div>
+                <div class="property" style="outline-style: dashed;">
+                    <h3>Outline Style</h3>
+                    <p>Values: <code>&lt;outline-style&gt;</code></p>
+                </div>
+                <div class="property" style="outline-width: 2px;">
+                    <h3>Outline Width</h3>
+                    <p>Values: <code>&lt;length&gt; | &lt;percentage&gt; | auto</code></p>
+                </div>
+                <div class="property" style="overflow: hidden;">
+                    <h3>Overflow</h3>
+                    <p>Values: <code>&lt;overflow-x&gt; &lt;overflow-y&gt;</code></p>
+                </div>
+                <div class="property" style="overflow-anchor: auto;">
+                    <h3>Overflow Anchor</h3>
+                    <p>Values: <code>auto | none</code></p>
+                </div>
+                <div class="property" style="overflow-block: scroll;">
+                    <h3>Overflow Block</h3>
+                    <p>Values: <code>visible | hidden | clip | scroll | auto</code></p>
+                </div>
+                <div class="property" style="overflow-inline: auto;">
+                    <h3>Overflow Inline</h3>
+                    <p>Values: <code>visible | hidden | clip | scroll | auto</code></p>
+                </div>
+                <div class="property" style="overflow-wrap: break-word;">
+                    <h3>Overflow Wrap</h3>
+                    <p>Values: <code>normal | break-word | anywhere</code></p>
+                </div>
+                <div class="property" style="overscroll-behavior: contain;">
+                    <h3>Overscroll Behavior</h3>
+                    <p>Values: <code>auto | contain | none</code></p>
+                </div>
+                <div class="property" style="overscroll-behavior-block: none;">
+                    <h3>Overscroll Behavior Block</h3>
+                    <p>Values: <code>auto | contain | none</code></p>
+                </div>
+                <div class="property" style="overscroll-behavior-inline: contain;">
+                    <h3>Overscroll Behavior Inline</h3>
+                    <p>Values: <code>auto | contain | none</code></p>
+                </div>
+                <div class="property" style="overscroll-behavior-x: auto;">
+                    <h3>Overscroll Behavior X</h3>
+                    <p>Values: <code>auto | contain | none</code></p>
+                </div>
+                <div class="property" style="overscroll-behavior-y: contain;">
+                    <h3>Overscroll Behavior Y</h3>
+                    <p>Values: <code>auto | contain | none</code></p>
+                </div>
+                <div class="property" style="padding: 10px;">
+                    <h3>Padding</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="padding-block: 20px 30px;">
+                    <h3>Padding Block</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="padding-block-end: 15px;">
+                    <h3>Padding Block End</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="padding-block-start: 25px;">
+                    <h3>Padding Block Start</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="padding-bottom: 20px;">
+                    <h3>Padding Bottom</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="padding-inline: 10px 20px;">
+                    <h3>Padding Inline</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="padding-inline-end: 15px;">
+                    <h3>Padding Inline End</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="padding-inline-start: 25px;">
+                    <h3>Padding Inline Start</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="padding-left: 10px;">
+                    <h3>Padding Left</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="padding-right: 20px;">
+                    <h3>Padding Right</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="padding-top: 30px;">
+                    <h3>Padding Top</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="page: auto;">
+                    <h3>Page</h3>
+                    <p>Values: <code>&lt;page-name&gt; | auto</code></p>
+                </div>
+                <div class="property" style="page-break-after: always;">
+                    <h3>Page Break After</h3>
+                    <p>Values: <code>auto | always | avoid | left | right</code></p>
+                </div>
+                <div class="property" style="page-break-before: avoid;">
+                    <h3>Page Break Before</h3>
+                    <p>Values: <code>auto | always
 
-    <section id="typography">
-      <h2>Typography</h2>
-      <div class="typography-container">
-        <p class="font-family">This text uses a different font family.</p>
-        <p class="font-size">This text has a different font size.</p>
-        <p class="font-weight">This text has a different font weight.</p>
-        <p class="line-height">This text has a different line height.</p>
-        <p class="letter-spacing">This text has different letter spacing.</p>
-      </div>
-    </section>
+ | avoid | left | right</code></p>
+                </div>
+                <div class="property" style="page-break-inside: auto;">
+                    <h3>Page Break Inside</h3>
+                    <p>Values: <code>auto | avoid</code></p>
+                </div>
+                <div class="property" style="perspective: 500px;">
+                    <h3>Perspective</h3>
+                    <p>Values: <code>none | &lt;length&gt;</code></p>
+                </div>
+                <div class="property" style="perspective-origin: center;">
+                    <h3>Perspective Origin</h3>
+                    <p>Values: <code>&lt;position&gt;</code></p>
+                </div>
+                <div class="property" style="place-content: center;">
+                    <h3>Place Content</h3>
+                    <p>Values: <code>&lt;align-content&gt; &lt;justify-content&gt;</code></p>
+                </div>
+                <div class="property" style="place-items: start;">
+                    <h3>Place Items</h3>
+                    <p>Values: <code>&lt;align-items&gt; &lt;justify-items&gt;</code></p>
+                </div>
+                <div class="property" style="place-self: center;">
+                    <h3>Place Self</h3>
+                    <p>Values: <code>&lt;align-self&gt; &lt;justify-self&gt;</code></p>
+                </div>
+                <div class="property" style="pointer-events: none;">
+                    <h3>Pointer Events</h3>
+                    <p>Values: <code>&lt;auto&gt; | none</code></p>
+                </div>
+                <div class="property" style="position: relative;">
+                    <h3>Position</h3>
+                    <p>Values: <code>&lt;static&gt; | relative | absolute | sticky | fixed</code></p>
+                </div>
+                <div class="property" style="quotes: '“' '”' '‘' '’';">
+                    <h3>Quotes</h3>
+                    <p>Values: <code>&lt;string&gt;</code></p>
+                </div>
+                <div class="property" style="resize: both;">
+                    <h3>Resize</h3>
+                    <p>Values: <code>none | both | horizontal | vertical | block | inline</code></p>
+                </div>
+                <div class="property" style="right: 10px;">
+                    <h3>Right</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="rotate: 45deg;">
+                    <h3>Rotate</h3>
+                    <p>Values: <code>&lt;angle&gt;</code></p>
+                </div>
+                <div class="property" style="row-gap: 20px;">
+                    <h3>Row Gap</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="ruby-align: space-around;">
+                    <h3>Ruby Align</h3>
+                    <p>Values: <code>&lt;start&gt; | center | space-between | space-around</code></p>
+                </div>
+                <div class="property" style="ruby-merge: auto;">
+                    <h3>Ruby Merge</h3>
+                    <p>Values: <code>&lt;auto&gt; | separate | collapse</code></p>
+                </div>
+                <div class="property" style="ruby-position: before;">
+                    <h3>Ruby Position</h3>
+                    <p>Values: <code>&lt;before&gt; | after | inter-character</code></p>
+                </div>
+                <div class="property" style="scale: 1.5;">
+                    <h3>Scale</h3>
+                    <p>Values: <code>&lt;number&gt;</code></p>
+                </div>
+                <div class="property" style="scroll-behavior: smooth;">
+                    <h3>Scroll Behavior</h3>
+                    <p>Values: <code>auto | smooth</code></p>
+                </div>
+                <div class="property" style="scroll-margin: 10px;">
+                    <h3>Scroll Margin</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="scroll-margin-block: 20px;">
+                    <h3>Scroll Margin Block</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="scroll-margin-block-end: 15px;">
+                    <h3>Scroll Margin Block End</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="scroll-margin-block-start: 25px;">
+                    <h3>Scroll Margin Block Start</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="scroll-margin-bottom: 20px;">
+                    <h3>Scroll Margin Bottom</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="scroll-margin-inline: 10px;">
+                    <h3>Scroll Margin Inline</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="scroll-margin-inline-end: 15px;">
+                    <h3>Scroll Margin Inline End</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="scroll-margin-inline-start: 25px;">
+                    <h3>Scroll Margin Inline Start</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="scroll-margin-left: 10px;">
+                    <h3>Scroll Margin Left</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="scroll-margin-right: 20px;">
+                    <h3>Scroll Margin Right</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="scroll-margin-top: 30px;">
+                    <h3>Scroll Margin Top</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="scroll-padding: 10px;">
+                    <h3>Scroll Padding</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="scroll-padding-block: 20px;">
+                    <h3>Scroll Padding Block</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="scroll-padding-block-end: 15px;">
+                    <h3>Scroll Padding Block End</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="scroll-padding-block-start: 25px;">
+                    <h3>Scroll Padding Block Start</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="scroll-padding-bottom: 20px;">
+                    <h3>Scroll Padding Bottom</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="scroll-padding-inline: 10px 20px;">
+                    <h3>Scroll Padding Inline</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="scroll-padding-inline-end: 15px;">
+                    <h3>Scroll Padding Inline End</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="scroll-padding-inline-start: 25px;">
+                    <h3>Scroll Padding Inline Start</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="scroll-padding-left: 10px;">
+                    <h3>Scroll Padding Left</h3>
+                    <p>Values: <code>&lt;length-percentage&gt;</code></p>
+                </div>
+                <div class="property" style="scroll-padding-right: 20px;">
+                    <h3>Scroll Padding Right</h3>
+                </div>
+		    </div>
 
-    <section id="display">
-      <h2>Display</h2>
-      <div class="display-container">
-        <div class="display-block">Display Block</div>
-        <div class="display-inline">Display Inline</div>
-        <div class="display-flex">Display Flex</div>
-        <div class="display-grid">Display Grid</div>
-        <div class="display-none">Display None</div>
-      </div>
     </section>
-
-    <footer>
-      <p>&copy; 2024 CSS Guide. All rights reserved.</p>
-    </footer>
-  </body>
-</html>
